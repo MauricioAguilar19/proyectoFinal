@@ -12,6 +12,13 @@ body{
     font-family:cursive
 }
 
+/*animaciones ramaDos*/
+
+h1:hover{
+    transform: scale(1.5);
+    transition: 400ms;
+}
+
 /*menu*/
 header{
     width: 100%;
