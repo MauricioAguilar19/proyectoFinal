@@ -30,7 +30,7 @@ body{
     }
   }
 
-  .logo img{
+  .navbar-brand img{
     animation: rotation 4s infinite linear;
  }
 /*menu*/
@@ -292,24 +292,34 @@ footer ul{
 
 /*Media queries*/
 
-@media screen and (min-width:630px){
-    .menuH{
-        display: none;
-    }
+@media screen and (min-width:770px){
+    
     .menu .items {
         display: flex; }
     /*Bootstrap css*/
+    button {
+        display: none;
+    }
+    .nav-link{
+        color: #fff;
+    }
     .navbar ul{
         display: flex;
         padding: 10px;
+        
     }
     ul .dropdown-menu {
         display: none;
     }
-    .dropdown-menu:checked{
+    .dropdown-item:hover{
         display: block;
-        padding: 3px;
+    }
+    .dropdown-menu{ 
+        display: block;
+        padding: 1px;
         width: 20%;
+        background-color: #f1b0d8;
+        border-radius: 1rem;
     }
     .menu ul{
         display: flex;
