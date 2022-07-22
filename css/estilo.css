@@ -14,10 +14,6 @@ body{
 
 /*animaciones ramaDos*/
 
-h1:hover{
-    transform: scale(1.5);
-    transition: 400ms;
-}
 
 .menu a:hover{
     transform: scale(1.2);
@@ -40,8 +36,8 @@ h1:hover{
 /*menu*/
 header{
     width: 100%;
-    background: linear-gradient(to bottom right, rgb(240, 109, 159),
-                                                 rgb(255, 255, 255));
+    background: linear-gradient( rgb(240, 109, 159),
+        rgb(101, 206, 171));
     
 }
 .menu{
@@ -55,7 +51,9 @@ header{
     padding: 0.5rem;
     
 }
-
+.menu .items{
+    display: none;
+}
 
 a{
     text-decoration: none;
@@ -71,7 +69,8 @@ nav{
     
 
 }
-.menu ul{
+.navbar ul
+{
     display: none;
 }
 /*responsivo
@@ -115,7 +114,6 @@ img{
     width: 70rem;
 }
 .contenedor{
-    padding: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr ;
@@ -127,7 +125,7 @@ img{
 .contenedor_slider{
     position: relative;
     max-width: 1000px;
-    width: 100%;
+    width: 99%;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -141,6 +139,7 @@ img{
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    padding: 1px;
 }
 
 .item_slide{
@@ -150,6 +149,7 @@ img{
     flex-shrink: 0;
     flex-grow: 0;
     max-width: 100%;
+    padding: 1px;
     
 }
 
@@ -262,6 +262,7 @@ main form div input{
     border-color: aliceblue;
 }
 
+
 /*Pie de pagina*/
 
 footer{
@@ -270,10 +271,12 @@ footer{
                         "derecho" ;
     justify-content: center;
     align-items: center;
-    padding: 0.2rem;
+    
     width: 100%;
     margin-top: auto;
-    background: linear-gradient(to bottom right, rgb(240, 109, 159), rgb(255, 255, 255));
+    background: linear-gradient( rgb(101, 206, 171), 
+                                        rgb(240, 109, 159)
+                                                );
 }
 
 footer ul{
@@ -283,7 +286,7 @@ footer ul{
     padding: 0.5rem;
 }
 .derecho{
-    padding: 1rem;
+    padding: 0.5rem;
     color: black;
 }
 
@@ -293,7 +296,22 @@ footer ul{
     .menuH{
         display: none;
     }
-    .menu ul {
+    .menu .items {
+        display: flex; }
+    /*Bootstrap css*/
+    .navbar ul{
+        display: flex;
+        padding: 10px;
+    }
+    ul .dropdown-menu {
+        display: none;
+    }
+    .dropdown-menu:checked{
+        display: block;
+        padding: 3px;
+        width: 20%;
+    }
+    .menu ul{
         display: flex;
         width: 80%;
         justify-content: space-around;
@@ -304,6 +322,22 @@ footer ul{
         display: flex;
         width: 100%;
     }
+    
+
+nav{
+    background-color: linear-gradient(to bottom right, rgb(240, 109, 159),
+    rgb(255, 255, 255));
+}
+.col{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+}
+.col h1{
+    width: 50%;
+}
+.carousel .slide{width: 50%;}
+
     nav ul li a{
         display: flex;
         background: linear-gradient(to right, rgb(111, 233, 206),
@@ -318,11 +352,23 @@ footer ul{
         transition: 300ms;
         box-shadow: 0px 0px 3px 3px #62fbd7;
     }
+    .nav-item .dropdown ul .dropdown-menu{
+        background: #62fbd7;
+        border-radius: 5rem;
+    }
+     .dropdown-menu li{
+        padding: 1rem;
+        background-color: linear-gradient(to bottom right, rgb(240, 109, 159),
+        rgb(255, 255, 255));
+    }
+    nav .justify-content-center li{
+        padding: 15px;
+    }
 }
 
 @media screen and (min-width:900px){
     .contenedor{
-        padding: 2rem;
+        padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr ;
