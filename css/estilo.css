@@ -21,16 +21,18 @@ header{
     background: linear-gradient( rgb(240, 109, 159),
         rgb(101, 206, 171));
     
+        
+    
 }
 .menu{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo img{
     width: 6rem;
     height: 6rem;
-    padding: 0.5rem;
+    padding: 1rem;
     
 }
 .menu .items{
