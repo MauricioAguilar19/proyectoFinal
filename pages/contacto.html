@@ -8,9 +8,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
         crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
-        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&family=Merriweather:ital,wght@1,700&display=swap" 
+rel="stylesheet">
         <link rel="stylesheet" href="../css/estilo.css">
     </head>
 <body>
@@ -29,7 +30,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                        <img src="../imagenes/iconropa.ico" alt="">Ropa</a>
+                        <img src="../imagenes/iconropa.ico" alt="">Productos</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="blusas.html"><img src="../imagenes/iconblusa.ico" alt=""> Blusas</a></li>
                       <li><a class="dropdown-item" href="tops.html"><img src="../imagenes/icontop.ico" alt=""> Tops</a></li>
@@ -44,9 +45,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#"><img src="../imagenes/iconinicio.ico" alt=""> Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html"><img src="../imagenes/iconinicio.ico" alt=""> Inicio</a>
                     <a class="nav-link" href="promociones.html"><img src="../imagenes/iconpromo.ico" alt=""> Promociones</a>
-                    <a class="nav-link" href="ropa.html"><img src="../imagenes/iconropa.ico" alt=""> Ropa</a>
+                    <a class="nav-link" href="ropa.html"><img src="../imagenes/iconropa.ico" alt=""> Productos</a>
                     <a class="nav-link" href="contacto.html"><img src="../imagenes/iconconta.ico" alt=""> Contacto</a>
                   </div>
                 </div>
@@ -58,39 +59,39 @@
         
         <form>
             
-                <div><h2>Escribenos</h2></div>
-            <div>
+                <div class="f1"><h2>Escribenos</h2></div>
+            <div class="f2">
                 
                 <label for="nombre">Nombre:</label>	
                 <input type="text" name="nombre"/>
             </div>
-            <div>
+            <div class="f3">
                 <label for="apellido">Apellido:</label>	
                 <input type="text" name="apellido"/>
             </div>
-            <div>
+            <div class="f4">
                 <label for="Email">Email:</label>	
                 <input type="text" name="Email"/>
             </div>
-            <div>
+            <div class="f5">
                 <img src="../imagenes/iconh.ico" alt="">
                 <input type="radio" name="sexo" value="hombre"/>
                 <img src="../imagenes/iconm.ico" alt="">
                 <input type="radio" name="sexo" value="mujer"/>
             </div>
-            <div>
+            <div class="f6">
                 <label for="message">Mensaje:</label>
                 <br>
-                    <textarea name="message" cols="40" rows="6" required></textarea>
+                    <textarea name="message" cols="20" rows="5" required></textarea>
             </div>
-            <div>Acepta términos y condiciones
+            <div class="f7">Acepta términos y condiciones
             <input type="checkbox" name="acepta" value="1"/>
             </div>
-            <div>    
+            <div class="f8">    
                 <input class="boton" type="submit" value="Enviar formulario"/>
                 <input class="boton" type="reset" value="Limpiar"/>
             </div>
-            <div><p>A la brevedad resolveremos tus dudas</p></div>
+            <div class="f9"><p>A la brevedad resolveremos tus dudas</p></div>
             
         
         </form>
@@ -104,5 +105,9 @@
         </ul>
         <p class="derecho">Derechos Reservados MADA Shop</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+        crossorigin="anonymous"></script>
 </body>
 </html>
