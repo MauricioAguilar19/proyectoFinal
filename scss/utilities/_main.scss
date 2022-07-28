@@ -1,0 +1,15 @@
+main{
+    margin: auto;
+    padding: 2rem;
+    .contenedor{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "texto1"
+                             "carrusel" ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+}

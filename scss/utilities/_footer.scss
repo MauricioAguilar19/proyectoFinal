@@ -1,0 +1,25 @@
+$footerColor:linear-gradient( rgb(101, 206, 171), 
+rgb(240, 109, 159)
+        ) ;
+
+footer{
+    display: grid;
+    grid-template-areas:"social"
+                        "derecho" ;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    margin-top: auto;
+    background: $footerColor;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .derecho{
+        padding: 0.5rem;
+        color: black;
+    }
+}
