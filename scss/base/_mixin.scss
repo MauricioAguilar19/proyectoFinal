@@ -1,0 +1,22 @@
+@mixin grid {   
+display: grid;
+justify-content: center;
+align-items: center;
+text-align: center;
+ }
+@mixin flex {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+@mixin medidas ($width, $padding) {
+width: $width;
+padding: $padding;
+}
+@mixin transformaciones($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    
+}

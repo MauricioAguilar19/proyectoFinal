@@ -1,0 +1,20 @@
+@import "base/variables";
+@import "base/extend";
+/*EXTEND*/
+body{
+    
+    @extend %colorTexto; 
+
+    
+
+    background-color:nth($colores, 1 ) ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+.navbar a{
+    @extend %colorTexto; 
+}
+footer .derecho {
+    @extend %colorTexto;
+}

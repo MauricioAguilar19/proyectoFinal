@@ -1,9 +1,13 @@
 //*import*//
-@import "utilities/reset";
-@import "utilities/body";
-@import "utilities/header";
-@import "utilities/main";
-@import "utilities/contacto";
-@import "utilities/footer";
-@import "utilities/animaciones";
-@import "utilities/mediaquerys"
+@import "base/reset";
+@import "base/body";
+@import "base/header";
+@import "base/main";
+@import "base/contacto";
+@import "base/footer";
+@import "base/animaciones";
+@import "base/mediaquerys";
+@import "base/variables";
+@import "base/mixin";
+@import "base/maps";
+@import "base/extend";

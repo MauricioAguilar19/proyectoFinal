@@ -1,9 +1,8 @@
-$textoLinks: white;
+@import "base/variables";
 $textoStyle:none;
 header{
     width: 100%;
-    background: linear-gradient( rgb(240, 109, 159),
-        rgb(101, 206, 171));
+    background: nth($colores, 8 );
 }
 
 .navbar{
@@ -14,7 +13,7 @@ header{
     align-items: center;
  
     a{
-        color: $textoLinks;
+        
         text-decoration: $textoStyle;
     }
     ul

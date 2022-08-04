@@ -1,7 +1,11 @@
+@import "base/variables";
+@import "base/mixin";
+@import "base/maps";
+
 main{
-    width: 100%;
+    @include medidas(100%, 0);
     form{
-        display: grid;
+        @include grid;
         grid-template-columns: 80%;
         grid-template-areas: "f1"
                              "f2"       
@@ -12,15 +16,11 @@ main{
                              "f7"
                              "f8"
                              "f9"   ;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         padding: 2rem;
         div{
             padding: 0.5rem;
             input{
-                background-color:rgb(240, 109, 159) ;
-                color: aliceblue;
+                
                 padding-left: 0.5rem;
             }
         }
@@ -30,7 +30,9 @@ main{
 
 }
 .boton{
-    padding: 5px;
+    background-color: map-get($map: $botonesContacto, $key: color-boton );
+    color: map-get($map: $botonesContacto , $key: color-texto );
+    padding: map-get($map: $botonesContacto , $key: medida-boton );
     border-radius: 10px;
-    border-color: aliceblue;
+    border-color:nth($list: $colores, $n:5 );
 }

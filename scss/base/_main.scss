@@ -1,15 +1,13 @@
+@import "base/mixin";
+
 main{
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     .contenedor{
-        display: grid;
+        @include grid;
         grid-template-columns:100%;
         grid-template-rows: 1fr;
         grid-template-areas: "texto1"
                              "carrusel" ;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    
     }
 }
