@@ -57,7 +57,8 @@ main {
     padding: 1rem;
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
-    grid-template-areas: "texto1" "carrusel"; }
+    grid-template-areas: "texto1"
+ "carrusel"; }
   main .carousel-inner img {
     width: 100%;
     height: auto;
@@ -72,7 +73,15 @@ main {
     align-items: center;
     text-align: center;
     grid-template-columns: 80%;
-    grid-template-areas: "f1" "f2"        "f3"        "f4"  "f5" "f6" "f7" "f8" "f9";
+    grid-template-areas: "f1"
+ "f2"       
+ "f3"       
+ "f4" 
+ "f5"
+ "f6"
+ "f7"
+ "f8"
+ "f9";
     padding: 2rem; }
     main form div {
       padding: 0.5rem; }
@@ -91,7 +100,8 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-template-areas: "social" "derecho";
+  grid-template-areas: "social"
+ "derecho";
   width: 100%;
   margin-top: auto; }
   footer .social img {
@@ -109,10 +119,10 @@ footer {
   keyframes-selector { } }
 
 main {
-  animation: fadein 1s;
+  animation: fadein 4s;
   -moz-animation: fadein 1s;
   -o-animation: fadein 1s;
-  -webkit-animation: 1s; }
+  -webkit-animation: fadei 1s; }
 
 @keyframes fadein {
   0% {
