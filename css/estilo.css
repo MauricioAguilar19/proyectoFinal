@@ -60,6 +60,7 @@ main {
     grid-template-areas: "texto1" "carrusel"; }
   main .carousel-inner img {
     width: 100%;
+    height: auto;
     background-size: contain; }
 
 main {
@@ -187,8 +188,6 @@ footer a:hover {
   .navbar ul {
     display: flex;
     padding: 4px; }
-  .navbar .nav-link {
-    color: white; }
   ul .dropdown-menu {
     display: none; }
   .dropdown-menu {
