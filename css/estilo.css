@@ -118,11 +118,11 @@ footer {
 @keyframes animation-name {
   keyframes-selector { } }
 
-main {
+.contenedor {
   animation: fadein 4s;
   -moz-animation: fadein 1s;
   -o-animation: fadein 1s;
-  -webkit-animation: fadei 1s; }
+  -webkit-animation: fadein 1s; }
 
 @keyframes fadein {
   0% {
