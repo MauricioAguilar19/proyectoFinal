@@ -2,7 +2,7 @@
 $textoStyle:none;
 header{
     width: 100%;
-    background: nth($colores, 8 );
+    
 }
 
 .navbar{
@@ -11,7 +11,10 @@ header{
     margin: auto;
     justify-content: space-between;
     align-items: center;
- 
+    .nav-link{
+        
+        @extend %colorTexto; 
+    }
     a{
         
         text-decoration: $textoStyle;
@@ -19,6 +22,11 @@ header{
     ul
 {
     display: none;
+}
+.navbar-brand img{
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(5px 5px 15px rgb(212, 114, 114));
 }
 .nav-link img{
     width: 32px;

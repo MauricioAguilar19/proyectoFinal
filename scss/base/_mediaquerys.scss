@@ -1,7 +1,7 @@
 @import "base/variables";
 @import "base/mixin";
 
-@media screen and (min-width:840px){
+@media screen and (min-width:861px){
     button {
         display: none;
     }
@@ -31,11 +31,12 @@
             display: block;
             padding: 1px;
             width: 20%;
-            background-color: nth($colores , 9 );
+            background-color: transparent;
             border-radius: 1rem;
+            border-color: transparent;
         }
         nav{
-            background-color:nth($colores, 10 );
+            background-color:transparent;
 
             ul li a{
                 display: flex;
@@ -49,7 +50,7 @@
                 padding: 15px;
             }
         }
-        .carousel .slide{width: 100%;}
+        
 
         main{
             form{

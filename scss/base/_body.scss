@@ -1,13 +1,14 @@
 @import "base/variables";
 @import "base/extend";
-/*EXTEND*/
+
 body{
     
     @extend %colorTexto; 
 
     
-
-    background-color:nth($colores, 1 ) ;
+    background-image: url("../imagenes/fondo.webp");
+    background-repeat:repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
